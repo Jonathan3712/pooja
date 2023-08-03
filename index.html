@@ -12,21 +12,29 @@
     <source src="tune.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio> -->
-  <script>
+  <!-- <script>
     window.onload = function(){
       document.getElementById("autoplay").play();
-    }
-  </script>
-   <audio id="autoplay" autoplay loop>
+    } -->
+  <!-- </script> -->
+   <audio>
     <source src="tune.mp3" type="audio/mpeg">
   </audio>
-  
+  <audio id="player" src="tune.mp3" type="audio/mpeg" loop></audio>
+  <div style="text-align:center; background-color:brown;">
+    <b>Hit</b> your <b>*A</b>ge
+    <button onclick="document.getElementById('player').play()"><b><i>22...</i></b></button>
+    <!-- <button onclick="document.getElementById('player').play()"><b>...23</b></button> -->
+    <span style="margin-left: 45px; margin-right: 45px;">Have a blessed year</span>
+    <button onclick="document.getElementById('player').play()"><b>...23</b></button>
+    <!-- <b>Puff your @ge</b> -->
+  </div>
   
   <link rel="stylesheet" href="index.css">
  <!-- Video Source -->
   <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
   <div class="txt">
-    <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"><p>Happy Birthday to my beloved friend! I wish you a joyful celebration. 
+    <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"><p>Happy Birthday to my <i>beloved friend!</i> I wish you a <b>joyful</b> celebration. 
     </p></marquee>
     <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2"><p>A year filled with health, joy, peace, and success is what I want for you. I hope your birthday is delightful, sweet, and filled with love, just like you!</p></marquee>
 </div>
@@ -78,6 +86,7 @@ $('button').click(function(){
 });
   </script>
  -->
+ <button onclick="document.getElementById('player').pause()">end</button>
 </body>
 </html> 
  
