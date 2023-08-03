@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <audio autoplay loop id="audioPlayer">
+    <source src="tune.ogg" type="audio/ogg">
+    <source src="tune.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <link rel="stylesheet" href="index.css">
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <div class="txt">
+    <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3"><p>Happy Birthday to my beloved friend! I wish you a joyful celebration. 
+    </p></marquee>
+    <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2"><p>A year filled with health, joy, peace, and success is what I want for you. I hope your birthday is delightful, sweet, and filled with love, just like you!</p></marquee>
+</div>
+  <section class="showcase">
+    <!-- <header>
+      <h2 class="logo">Travel</h2>
+      <div class="toggle"></div>
+    </header> -->
+    <video src="bg.mp4" muted loop autoplay class="fit"></video>
+    <div class="overlay"></div>
+    <div class="container liner">
+      <div class="row text-center">
+          <div class="col-sm-3">
+              <img src="img1.jpg" width="320px" height="400px">
+          </div>
+          <div class="col-sm-3">
+            <!-- <img src="img3.jpg" width="220px" height="450px"> -->
+          </div>
+          <div class="col-sm-3">
+            <img src="img1.jpg" width="320px" height="400px">
+              <!-- <img src="img2.jpg" width="400px" height="300px"> -->
+          </div>
+          <div class="col-sm-3">
+              <!-- <img src="img4.jpg" width="400px" height="400px"> -->
+          </div>
+      </div>
+  </div>
+    <ul class="social">
+      <li><a href="#"><img src="img1.jpg" width="400px" height="500px"></a></li>
+      <li><a href="#"><img src="img5.jpg" width="600px" height="500px"></a></li>
+    </ul>
+    <ul class="social1">
+      <li><a href="#"><img src="image.jpg" width="400px" height="600px"></a></li>
+      <li><a href="#"><img src="img7.jpg" width="600px" height="600px"></a></li>
+    </ul>
+    
+  </section>
+  
+  <script>
+    var audioPlayer=document.getElementById('audioPlayer');
+var mp4Source=$('source#mp4');
+var oggSource=$('source#ogg');
+$('button').click(function(){    
+  audioPlayer.pause();
+  mp4Source.attr('src', 'newFile.mp4');
+  oggSource.attr('src', 'newFile.ogg');
+  audioPlayer.load();
+  audioPlayer.play();
+});
+  </script>
+
+</body>
+</html> 
+ 
+ 
